@@ -30,7 +30,7 @@ const eureka = new Eureka({
     }
   },
   eureka: {
-    host: 'localhost',
+    host: 'amisno-infra-eureka',
     port: 9103,
     servicePath: '/eureka/apps/'
   }
