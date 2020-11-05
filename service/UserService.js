@@ -1,5 +1,6 @@
 'use strict';
 
+const User = require('../model/User')
 
 /**
  * Create user
@@ -9,9 +10,7 @@
  * no response value expected for this operation
  **/
 exports.createUser = function(body) {
-  return new Promise(function(resolve, reject) {
-    resolve();
-  });
+  return User.create(body);
 }
 
 

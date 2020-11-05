@@ -16,6 +16,8 @@
     "connect": "^3.2.0",
     "eureka-js-client": "^4.5.0",
     "js-yaml": "^3.3.0",
+    "mongoose": "^5.10.12",
+    "swagger-mongoose": "^1.1.2",
     "swagger-tools": "0.10.1"
   }
 }

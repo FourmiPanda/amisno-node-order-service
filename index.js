@@ -3,7 +3,7 @@
 var fs = require('fs'),
     path = require('path'),
     http = require('http');
-
+const mongoose = require('mongoose')
 var app = require('connect')();
 var swaggerTools = require('swagger-tools');
 var jsyaml = require('js-yaml');
@@ -40,6 +40,11 @@ eureka.start(function(error){
   console.log(error || 'complete');
 });
 
+
+// Connect to DB
+mongoose.connect('mongodb://localhost/orderservice')
+    .then(() => console.log('MongoDB connected…'))
+    .catch(err => console.log(err))
 
 // swaggerRouter configuration
 var options = {
